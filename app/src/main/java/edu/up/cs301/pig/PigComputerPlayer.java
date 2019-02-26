@@ -1,8 +1,11 @@
 package edu.up.cs301.pig;
 
+import java.util.Random;
+
 import edu.up.cs301.game.GameComputerPlayer;
 import edu.up.cs301.game.actionMsg.GameAction;
 import edu.up.cs301.game.infoMsg.GameInfo;
+import edu.up.cs301.game.infoMsg.NotYourTurnInfo;
 import edu.up.cs301.game.util.Tickable;
 
 /**
@@ -28,7 +31,22 @@ public class PigComputerPlayer extends GameComputerPlayer {
      */
     @Override
     protected void receiveInfo(GameInfo info) {
-        // TODO  You will implement this method
+       if(info instanceof NotYourTurnInfo){
+           return;
+       }
+       else{
+           int val = new Random().nextInt(1);
+           if(val == 1){
+               PigHoldAction hold = new PigHoldAction(this);
+               game.sendAction(hold);
+           }
+           else{
+               PigRollAction roll = new PigRollAction(this);
+               game.sendAction(roll);
+           }
+
+       }
+
     }//receiveInfo
 
 }

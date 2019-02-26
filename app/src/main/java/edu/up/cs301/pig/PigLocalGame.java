@@ -51,7 +51,7 @@ public class PigLocalGame extends LocalGame {
                 playerTot = state.getPlayerZeroScore();
                 playerTot = playerTot + runningTot;
                 state.setPlayerZeroScore(playerTot);
-                if(players.length > 0){
+                if(players.length > 1){
                     state.setPlayerId(1);
                 }
             }
@@ -66,7 +66,7 @@ public class PigLocalGame extends LocalGame {
             return true;
         }
         else if(action instanceof PigRollAction){
-            int val = new Random().nextInt(5) + 1;
+            int val = new Random().nextInt(6) + 1;
             state.setDieVal(val);
 
             if(state.getDieVal() != 1){
@@ -76,7 +76,7 @@ public class PigLocalGame extends LocalGame {
             }
             else{
                 state.setRunningTotal(0);
-                if(players.length > 0){
+                if(players.length > 1 && state.getPlayerId() == 0){
                     state.setPlayerId(1);
                 }
                 else{
