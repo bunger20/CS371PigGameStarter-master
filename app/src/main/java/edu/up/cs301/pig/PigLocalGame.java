@@ -7,6 +7,8 @@ import edu.up.cs301.game.infoMsg.GameState;
 
 import android.util.Log;
 
+import java.util.Random;
+
 /**
  * class PigLocalGame controls the play of the game
  *
@@ -42,9 +44,35 @@ public class PigLocalGame extends LocalGame {
      */
     @Override
     protected boolean makeMove(GameAction action) {
-        if(){
-            int total = state.getRunningTotal();
-            
+        int runningTot = state.getRunningTotal();
+        int playerTot;
+        if(action instanceof PigHoldAction){
+            if(state.getPlayerId() == 0){
+                playerTot = state.getPlayerZeroScore();
+                playerTot = playerTot + runningTot;
+                state.setPlayerZeroScore(playerTot);
+            }
+            else{
+                playerTot = state.getPlayerOneScore();
+                playerTot = playerTot + runningTot;
+                state.setPlayerOneScore(playerTot);
+            }
+
+            state.setRunningTotal(0);
+            return true;
+        }
+        if(action instanceof PigRollAction){
+            int val = new Random().nextInt(5) + 1;
+            state.setDieVal(val);
+
+            if(state.getDieVal() != 1){
+                runningTot = runningTot + state.getDieVal();
+            }
+            else{
+                state.setRunningTotal(0);
+
+            }
+            return true;
         }
         return false;
     }//makeMove
