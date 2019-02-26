@@ -15,11 +15,13 @@ import android.util.Log;
  */
 public class PigLocalGame extends LocalGame {
 
+    PigGameState state;
+
     /**
      * This ctor creates a new game state
      */
     public PigLocalGame() {
-        //TODO  You will implement this constructor
+        state = new PigGameState();
     }
 
     /**
@@ -27,7 +29,9 @@ public class PigLocalGame extends LocalGame {
      */
     @Override
     protected boolean canMove(int playerIdx) {
-        //TODO  You will implement this method
+        if(playerIdx == state.getPlayerId()){
+            return true;
+        }
         return false;
     }
 
@@ -38,7 +42,10 @@ public class PigLocalGame extends LocalGame {
      */
     @Override
     protected boolean makeMove(GameAction action) {
-        //TODO  You will implement this method
+        if(){
+            int total = state.getRunningTotal();
+            
+        }
         return false;
     }//makeMove
 
