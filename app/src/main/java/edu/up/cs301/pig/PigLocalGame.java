@@ -51,26 +51,37 @@ public class PigLocalGame extends LocalGame {
                 playerTot = state.getPlayerZeroScore();
                 playerTot = playerTot + runningTot;
                 state.setPlayerZeroScore(playerTot);
+                if(players.length > 0){
+                    state.setPlayerId(1);
+                }
             }
             else{
                 playerTot = state.getPlayerOneScore();
                 playerTot = playerTot + runningTot;
                 state.setPlayerOneScore(playerTot);
+                state.setPlayerId(0);
             }
 
             state.setRunningTotal(0);
             return true;
         }
-        if(action instanceof PigRollAction){
+        else if(action instanceof PigRollAction){
             int val = new Random().nextInt(5) + 1;
             state.setDieVal(val);
 
             if(state.getDieVal() != 1){
-                runningTot = runningTot + state.getDieVal();
+               runningTot = runningTot + state.getDieVal();
+               state.setRunningTotal(runningTot);
+
             }
             else{
                 state.setRunningTotal(0);
-
+                if(players.length > 0){
+                    state.setPlayerId(1);
+                }
+                else{
+                    state.setPlayerId(0);
+                }
             }
             return true;
         }
@@ -82,7 +93,8 @@ public class PigLocalGame extends LocalGame {
      */
     @Override
     protected void sendUpdatedStateTo(GamePlayer p) {
-        //TODO  You will implement this method
+        PigGameState copyState = new PigGameState(state.getPlayerId(),state.getPlayerZeroScore(),state.getPlayerOneScore(), state.getRunningTotal(), state.getDieVal());
+        p.sendInfo(copyState);
     }//sendUpdatedSate
 
     /**
@@ -94,7 +106,13 @@ public class PigLocalGame extends LocalGame {
      */
     @Override
     protected String checkIfGameOver() {
-        //TODO  You will implement this method
+        if(state.getPlayerZeroScore() >= 50){
+            return "Player 0 won with a score of " + state.getPlayerZeroScore();
+        }
+        if(state.getPlayerOneScore() >= 50){
+            return "Player 1 won with a score of " + state.getPlayerOneScore();
+        }
+
         return null;
     }
 

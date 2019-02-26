@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/annex/Number53/Documents/Teaching/2018_Fall_CS371/lab7/CS371PigGameStarter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "outputFile": "C:\\Users\\bunger20\\Desktop\\CS371PigGameStarter-master\\CS371PigGameStarter-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "/annex/Number53/Documents/Teaching/2018_Fall_CS371/lab7/CS371PigGameStarter/app/src/main/res/values-v11/styles.xml",
+                    "source": "C:\\Users\\bunger20\\Desktop\\CS371PigGameStarter-master\\CS371PigGameStarter-master\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

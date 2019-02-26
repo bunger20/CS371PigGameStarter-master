@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/annex/Number53/Documents/Teaching/2018_Fall_CS371/lab7/CS371PigGameStarter/app/build/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat",
+            "outputFile": "C:\\Users\\bunger20\\Desktop\\CS371PigGameStarter-master\\CS371PigGameStarter-master\\app\\build\\intermediates\\res\\merged\\debug\\values-v11_values-v11.arsc.flat",
             "map": [
                 {
-                    "source": "/annex/Number53/Documents/Teaching/2018_Fall_CS371/lab7/CS371PigGameStarter/app/src/main/res/values-v11/styles.xml",
+                    "source": "C:\\Users\\bunger20\\Desktop\\CS371PigGameStarter-master\\CS371PigGameStarter-master\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,10 +23,10 @@
             ]
         },
         {
-            "outputFile": "/annex/Number53/Documents/Teaching/2018_Fall_CS371/lab7/CS371PigGameStarter/app/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat",
+            "outputFile": "C:\\Users\\bunger20\\Desktop\\CS371PigGameStarter-master\\CS371PigGameStarter-master\\app\\build\\intermediates\\res\\merged\\debug\\values-v14_values-v14.arsc.flat",
             "map": [
                 {
-                    "source": "/annex/Number53/Documents/Teaching/2018_Fall_CS371/lab7/CS371PigGameStarter/app/src/main/res/values-v14/styles.xml",
+                    "source": "C:\\Users\\bunger20\\Desktop\\CS371PigGameStarter-master\\CS371PigGameStarter-master\\app\\src\\main\\res\\values-v14\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -45,10 +45,27 @@
             ]
         },
         {
-            "outputFile": "/annex/Number53/Documents/Teaching/2018_Fall_CS371/lab7/CS371PigGameStarter/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "outputFile": "C:\\Users\\bunger20\\Desktop\\CS371PigGameStarter-master\\CS371PigGameStarter-master\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/annex/Number53/Documents/Teaching/2018_Fall_CS371/lab7/CS371PigGameStarter/app/src/main/res/values/strings.xml",
+                    "source": "C:\\Users\\bunger20\\Desktop\\CS371PigGameStarter-master\\CS371PigGameStarter-master\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "58",
+                        "endOffsets": "71"
+                    },
+                    "to": {
+                        "startLines": "31",
+                        "startColumns": "4",
+                        "startOffsets": "1612",
+                        "endColumns": "57",
+                        "endOffsets": "1665"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\bunger20\\Desktop\\CS371PigGameStarter-master\\CS371PigGameStarter-master\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "11,2,7,17,18,19,14,3,20,4,8,12,13,21,10,6,15,9,15,5",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,89,4",
@@ -65,17 +82,7 @@
                     }
                 },
                 {
-                    "source": "/annex/Number53/Documents/Teaching/2018_Fall_CS371/lab7/CS371PigGameStarter/app/src/main/res/values/color.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,92,129",
-                        "endColumns": "36,36,37",
-                        "endOffsets": "87,124,162"
-                    }
-                },
-                {
-                    "source": "/annex/Number53/Documents/Teaching/2018_Fall_CS371/lab7/CS371PigGameStarter/app/src/main/res/values/dimen.xml",
+                    "source": "C:\\Users\\bunger20\\Desktop\\CS371PigGameStarter-master\\CS371PigGameStarter-master\\app\\src\\main\\res\\values\\dimen.xml",
                     "from": {
                         "startLines": "7,2,4,3,6,5",
                         "startColumns": "4,4,4,4,4,4",
@@ -92,20 +99,13 @@
                     }
                 },
                 {
-                    "source": "/annex/Number53/Documents/Teaching/2018_Fall_CS371/lab7/CS371PigGameStarter/app/src/main/res/values/styles.xml",
+                    "source": "C:\\Users\\bunger20\\Desktop\\CS371PigGameStarter-master\\CS371PigGameStarter-master\\app\\src\\main\\res\\values\\color.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "58",
-                        "endOffsets": "71"
-                    },
-                    "to": {
-                        "startLines": "31",
-                        "startColumns": "4",
-                        "startOffsets": "1612",
-                        "endColumns": "57",
-                        "endOffsets": "1665"
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,92,129",
+                        "endColumns": "36,36,37",
+                        "endOffsets": "87,124,162"
                     }
                 }
             ]
